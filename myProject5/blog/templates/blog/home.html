@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog page #1 Template Basic </title>
+</head>
+<body>
+    <h1>template basic </h1>
+    <p>this is the comment</p>
+    <!-- single variable  -->
+   <p>Name: {{ name }}</p>
+<p>Age: {{ age }}</p>
+<p>Skill: {{ skill.1 }}</p>
+
+<h2>Blog Information</h2>
+<p>Title: {{ blog.title }}</p>
+<p>Created At: {{ blog.created }}</p>
+<p>Content: {{ blog.content|safe }}</p>
+
+     
+     <p>ok great its working</p>
+
+     <!-- default value  -->
+      <p>Empty Value: {{ empty_value|default:"No value Provided" }}</p>
+      <p>Empty Value: {{ empty_value|default_if_none:"No DATA" }}</p>
+
+
+     
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+

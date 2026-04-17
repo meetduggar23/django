@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog page #1 Template Basic </title>
+</head>
+<body>
+   
+   <h1> BLOG FILTER PAGE </h1>
+<hr/>
+  
+    <p>Author available: {{ post.author|default:"yes,no,mayBe" }}</p>
+    <p>Coments count: {{ post.comments_count }}</p>
+<hr/>
+    {% comment %} date and time filter {% endcomment %}
+
+    <p>Created At: {{ post.created_at }}</p>
+    <p>Created At (Date): {{ post.created_at|date:"d-m-Y" }}</p>
+<hr/>
+    {% comment %} encoding and formatiing  {% endcomment %}
+
+    <p> <b> title encoded:</b> {{ post.title|urlencode }}</p>
+    <p><b> float format:</b> {{ 789455|floatformat:5 }}</p>
+<hr/>
+    {% comment %} text filter {% endcomment %}
+    <p><b>Title (NORMAL):</b> {{ post.title }}</p>
+    <p><b>Title (UPPERCASE):</b> {{ post.title|upper }}</p>
+    <p><b>Title (LOWERCASE):</b> {{ post.title|lower }}</p>
+    <p><b>capfirst:</b> {{ post.title|capfirst }}</p>
+    <p><b>Title (Truncate):</b> {{ post.title|truncatechars:10 }}</p>   
+    <p><b>Title (Truncate Words):</b> {{ post.title|truncatewords:2 }}</p>   
+    <p><b>Title (Word Count):</b> {{ post.title|wordcount }}</p>
+
+    <hr> 
+{% comment %} addition {% endcomment %}
+    <p><b>original price:</b> {{ post.price }}</p>
+    <p><b> original Price(+60):</b> {{ post.price|add:60 }}</p>
+    <hr/>
+    {% comment %} division {% endcomment %}
+    {% if post.number|divisibleby:2%}
+    <p>{{post.number}} is Even </p>
+    {% else %}
+    <p>{{post.number}} is Odd</p>
+    {% endif %}
+    <hr/>
+
+    {% comment %} list filter  {% endcomment %}
+    <p><b>first Tag:</b> {{ post.tags|first }}</p>
+    <p><b>last Tag:</b> {{ post.tags|last }}</p>
+    <p> <b>slice (first 2 tags):</b> {{ post.tags|slice:":2" }}</p>
+    <p><b>join Tag :</b> {{post.tags|join:""}}</p>
+
+
+
+
+
+    
+
+
+</body>
+</html>
+
+

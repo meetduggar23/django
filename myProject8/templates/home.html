@@ -1,0 +1,16 @@
+{%extends 'base.html'%}
+{% load static %}
+{% block title %}Home page{% endblock %}
+{% block content %}
+<h1>Welcome to my blog home page </h1>
+<p>meet my page </p>
+<img src="{% static 'images/logo.png' %}" alt="Home Image">
+ <form method="post">
+     {% csrf_token %} {% comment %} ##yeh apan ko  bhar ke viruses se bachata hai {% endcomment %}
+     <input type="text" name="name" placeholder="username">
+    <input type="text" name="name" placeholder="password">
+    <button type="submit">Submit</button>
+</form>
+<button onclick="showAlert()">Click me</button>
+
+{% endblock %}

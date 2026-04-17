@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My title{% endblock %}</title>
+
+    {% load static %}
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    {% block corecss %}{% endblock %}
+</head>
+<body>
+
+    <div class="container">
+        {% block content %}
+        <h1>My Site</h1>
+        {% endblock %}
+    </div>
+
+</body>
+</html>

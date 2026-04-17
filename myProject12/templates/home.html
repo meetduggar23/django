@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %} 
+{% load static %}
+<section class="hero">
+    </section>
+    <section class="projects">
+        <h2>My Projects</h2>
+<div class="project-grid">
+            <div class="project-card">
+                <img src="{% static 'images/beach.jpg' %}" alt="beach">
+                <h3>Beach Vacation</h3>
+                </div>
+
+ <div class="project-card">
+                <img src="{% static 'images/j.jpg' %}" alt="j">
+                <h3>Journey Project</h3>
+                </div>
+ <div class="project-card">
+                <img src="{% static 'images/news.png' %}" alt="news">
+                <h3>News Project</h3>
+                </div>
+ <div class="project-card">
+                <img src="{% static 'images/parashoot.jpg' %}" alt="parashoot">
+                <h3>Parashoot Adventure</h3>
+                </div>
+        </div>
+    </section>
+{% endblock %}
+
+
+                
+
+                
