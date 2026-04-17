@@ -7,17 +7,18 @@ This repository contains two learning tracks:
 
 ## Projects (ordered)
 
-GitHub sorts folders alphabetically, so use this index when you want the numeric order:
+ GitHub sorts folders alphabetically, so use this index when you want the numeric order:
 
-1. [myProject1](./myProject1)
-2. [myProject2](./myProject2)
-3. [myProject3](./myProject3)
-4. [myProject4](./myProject4)
-5. [myProject5](./myProject5)
-6. [myProject6](./myProject6)
-7. [myProject7](./myProject7)
-8. [myProject8](./myProject8)
-9. [myProject9](./myProject9)
+0. [myProject00](./myProject00)
+1. [myProject01](./myProject01)
+2. [myProject02](./myProject02)
+3. [myProject03](./myProject03)
+4. [myProject04](./myProject04)
+5. [myProject05](./myProject05)
+6. [myProject06](./myProject06)
+7. [myProject07](./myProject07)
+8. [myProject08](./myProject08)
+9. [myProject09](./myProject09)
 10. [myProject10](./myProject10)
 11. [myProject11](./myProject11)
 12. [myProject12](./myProject12)
