@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+
+# Django local DB / artifacts
+db.sqlite3
+*.sqlite3
+

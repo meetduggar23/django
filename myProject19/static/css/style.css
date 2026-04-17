@@ -1,0 +1,36 @@
+/* Shared styles for myProject19 templates */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: #f7f9fc;
+  color: #222;
+  margin: 0;
+  padding: 1.25rem;
+}
+h1 {
+  color: #0b5cff;
+  margin-bottom: 0.75rem;
+}
+ul {
+  background: #fff;
+  border: 1px solid #e6e9ef;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  list-style: disc inside;
+}
+li {
+  padding: 0.25rem 0;
+}
+.notice {
+  padding: 0.5rem 0.75rem;
+  background: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 4px;
+  color: #856404;
+}
+.success {
+  padding: 0.5rem 0.75rem;
+  background: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+  color: #155724;
+}
